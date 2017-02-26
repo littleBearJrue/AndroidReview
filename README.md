@@ -1,1 +1,6 @@
 # AndroidReview
+
+### Handler机制的原理
+UI主线程初始化第一个Handler时会通过ThreadLocal创建一个Looper对象，使用ThreadLocal的目的是为了保证每一个线程只创建一个Looper.之后其他的handler初始化的时候直接获取第一个Handler创建的looper.Looper循环Handler发送到消息队列Message Queue里的消息，并取出消息分发到指定的handler进行处理
+其中handler发送消息到队列通过sendMessage方法，而handler分发处理的消息通过handleMessage进行接收子线程传过来的消息，在主线程中做相应处理
+![](https://github.com/littleBearJrue/MarkDownPhotos/blob/master/handler.png?raw=true)
