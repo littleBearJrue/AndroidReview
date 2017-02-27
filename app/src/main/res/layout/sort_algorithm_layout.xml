@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/originData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="data"/>
+
+    <TextView
+        android:id="@+id/sortResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:text="result"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bubbleSort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="冒泡排序"/>
+            <Button
+                android:id="@+id/selectSort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择排序"/>
+            <Button
+                android:id="@+id/insertSort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="插入排序"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/mergeSort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="归并排序"/>
+            <Button
+                android:id="@+id/quickSort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="快速排序"/>
+            <Button
+                android:id="@+id/shellSort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="shell排序"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

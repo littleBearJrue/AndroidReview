@@ -10,6 +10,8 @@ import com.jrue.appframe.lib.base.BaseFragment;
 import com.jrue.appframe.lib.event.OnBackPressedCtrlEvent;
 import com.jrue.appframe.lib.widget.TitleBarLayout;
 
+import butterknife.OnClick;
+
 /**
  * Created by jrue on 17/2/27.
  */
@@ -42,6 +44,11 @@ public class HomeAlgorithmFragment extends BaseFragment {
             bar.setTitleText("算法知识汇总");
             bar.setVisibility(View.VISIBLE);
         }
+    }
+
+    @OnClick(R.id.sortBtn)
+    void onEnterSort() {
+        addFragmentToBackStack(new sortAlgorithmFragment());
     }
 
     @Override
