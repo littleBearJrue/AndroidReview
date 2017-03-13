@@ -5,10 +5,24 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/secondText"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="Java Fragment" />
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnStrChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="字符串改变"/>
+
+        <TextView
+            android:id="@+id/strChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I love you !!!"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
 </LinearLayout>

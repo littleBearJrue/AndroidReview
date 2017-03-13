@@ -117,6 +117,7 @@ public class sortAlgorithmFragment extends BaseFragment {
                 break;
             }
             case MSort.SORT_MERGE: {
+                result = MSort.mergeSort(origin, 0, origin.length - 1);
                 break;
             }
             case MSort.SORT_SHELL: {
